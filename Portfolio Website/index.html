@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <nav id="desktop-nav">
         <div class="logo">Vishnumohana Kasargod</div>
         <div>
             <ul class="navlinks">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -28,14 +29,35 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#" onclick="togglemenu()">About</a></li>
-                <li><a href="#" onclick="togglemenu()">Experience</a></li>
-                <li><a href="#" onclick="togglemenu()">Project</a></li>
-                <li><a href="#" onclick="togglemenu()">Contact</a></li>
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="#project" onclick="togglemenu()">Project</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
             </div>
         </div>
 
     </nav>
+    <section id="profile">
+        <div class="pic-container">
+            <img src="./assests/profile-pic.png" alt="Vishnu's profile pic">
+        </div>
+        <div class="section_pic">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Vishnumohana Kasargod</h1>
+            <p class="section_text_p2">Aspiring web developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assests/Vishnumohana CV 3.0.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info</button>
+            </div>
+            <div id="socials-contaier">
+                <img src="./assests/linkedin.png" alt="linkedin profile"
+                class="icon" onclick="location.href='https://linkedin.com/in/vishnumohana-kasargod' ">
+
+                <img src="./assests/github.png" alt="github profile"
+                class="icon" onclick="location.href='https://github.com/' ">
+            </div>
+        </div>
+    </section>
 
 
 
